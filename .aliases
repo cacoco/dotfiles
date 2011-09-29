@@ -5,7 +5,8 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # List all files colorized in long format, including dot files
-alias la="ls -Gla"
+alias ls="ls -G"
+alias ll="ls -al"
 
 # List only directories
 alias lsd='ls -l | grep "^d"'
@@ -52,7 +53,8 @@ alias spoton="sudo mdutil -a -i on"
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do alias "$method"="lwp-request -m '$method'"; done
 
-# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 10'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+# Telnet to running memcached
+alias memcached='telnet localhost 11211'
+
+# Determine the diskspace MySQL is using
+alias mysqlspace='sudo du -sh /usr/local/mysql/'
