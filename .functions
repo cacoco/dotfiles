@@ -13,3 +13,6 @@ httpcompression() {
 digga() {
   dig +nocmd "$1" any +multiline +noall +answer
 }
+
+# MacVim
+function mvim { /usr/local/Cellar/macvim/7.3-57/MacVim.app/Contents/MacOS/Vim -g $*; }
