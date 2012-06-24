@@ -1,22 +1,22 @@
-# Make vim the default editor
-export EDITOR=vi
-export EVENT_NOKQUEUE=1
-export GIT_HOME=/usr/local/git
-export JAVA_HOME=$(/usr/libexec/java_home)
-export JAVA_OPTS=-Xmx768m
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
-export M2_HOME=/usr/local/Cellar/maven
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
+export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_OPTS=-Xmx768m
+export M3_HOME=/usr/share/maven
 export MAVEN_OPTS="-Xms256m -Xmx2048m -XX:PermSize=512m -XX:MaxPermSize=512m"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export EVENT_NOKQUEUE=1
+export EDITOR=vi
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export GIT_HOME=/usr/local/git
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 
-export PATH=/usr/local/bin:$PATH:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/git/bin:/usr/local/jython:/usr/local/Cellar:/Users/christopher/development/thirdparty/storm-0.5.0/bin
+export PATH=/usr/local/bin:$PATH:/usr/local/Cellar:/usr/local/share/aclocal
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
